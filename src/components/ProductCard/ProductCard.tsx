@@ -69,9 +69,11 @@ export default function ProductCard ({product}: ProductCard) {
                         {product?.metaData?.meals.length > 0 && (
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#1e3282" fillRule="evenodd" d="M17.995 13v8.5c0 .374.343.5.5.5a.5.5 0 0 0 .501-.5s.008-16.774 0-19.265C18.063 3.316 16.44 7.431 15.663 13zm.501 11c-1.203 0-2.501-.956-2.501-2.5v-6.501H13.45C13.586 10.941 15.892 0 19.188 0c1.007 0 1.801.811 1.807 1.845.01 1.348.001 19.655.001 19.655 0 1.378-1.122 2.5-2.5 2.5M10.647 0H4.332c-.28 1.447-1.071 5.458-1.309 7.853-.207 2.084 1.016 3.03 1.709 3.55.147.117.265.294.265.482C5 13.48 5 20.172 5 21.476 5 22.867 5.98 24 7.552 24 9.005 24 10 22.861 10 21.476v-9.538c0-.19.102-.369.251-.486.723-.531 1.991-1.464 1.755-3.638-.259-2.383-1.074-6.393-1.359-7.814M9.171 2s.616 3.909.847 6.029c.13 1.212-.559 1.494-1.152 1.964-.791.626-.866 1.186-.866 1.771v9.609c0 .299-.09.627-.506.627S7 21.654 7 21.373v-9.615c0-.574-.042-1.143-.828-1.773-.581-.466-1.275-.769-1.159-1.935.211-2.114.774-6.05.774-6.05h.476v5h.817l.139-5h.524l.123 5h.835l-.033-5z" clipRule="evenodd"/></svg>
-                                {product?.metaData?.meals?.map((meal, index) => (
-                                    <span key={meal}>{meal}{index > 0 && index < product?.metaData?.meals.length - 1 && "," }</span>
-                                ))}
+                                <span className="product-card-li-span">
+                                    {product?.metaData?.meals?.map((meal, index) => (
+                                        <span key={meal}>{meal}{index > 0 && index < product?.metaData?.meals.length - 1 && "," }</span>
+                                    ))}
+                                </span>
                             </li>
                         )}
                         {product?.departure?.metaData?.boardBasis && product?.departure?.metaData?.boardBasis !== 'Multiple' && (
