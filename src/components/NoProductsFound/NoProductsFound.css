@@ -1,0 +1,16 @@
+.no-products-found {
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-products-found .no-products-found-svg {
+    max-width: 100px;
+    fill: var(--color-blue);
+    margin-bottom: 1rem;
+}
+
+.no-products-found p {
+    font-size: 24px;
+    font-weight: 600;
+}

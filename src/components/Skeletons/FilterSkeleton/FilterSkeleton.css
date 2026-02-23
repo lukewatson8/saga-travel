@@ -1,0 +1,15 @@
+.filter-skeleton-content {
+    background-color: var(--color-grey-light);
+    width: 75%;
+    height: 16px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.filter-skeleton-select {
+    background-color: var(--color-grey-light);
+    width: 100%;
+    height: 52px;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}

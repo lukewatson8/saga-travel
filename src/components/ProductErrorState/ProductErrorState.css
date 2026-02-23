@@ -1,0 +1,16 @@
+.product-error-state {
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product-error-state .product-error-state-svg {
+    max-width: 100px;
+    fill: var(--color-blue);
+    margin-bottom: 1rem;
+}
+
+.product-error-state p {
+    font-size: 24px;
+    font-weight: 600;
+}
