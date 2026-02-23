@@ -122,6 +122,7 @@
     cursor: pointer;
     background-color: var(--color-white);
     transition: 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .product-card-container

@@ -24,8 +24,8 @@ export default function ProductCard ({product}: ProductCard) {
                     <>
                         <div className="product-card-images" ref={fancyboxRef}>
                             <img src={product?.images[0]?.filename} alt={product?.images[0]?.alt}></img>
-                            <a href={product?.images[0]?.filename} data-fancybox="gallery">
-                                <button className="product-card-images-button">View all</button>
+                            <a className="product-card-images-button" href={product?.images[0]?.filename} data-fancybox="gallery">
+                                View all
                             </a>
                             <div className="hidden">
                                 {product?.images.map((image, index) => (
@@ -36,11 +36,9 @@ export default function ProductCard ({product}: ProductCard) {
                                             </a>
                                         )}
                                     </div>
-
                                 ))}
                             </div>
                         </div>
-                        
                     </>
                 )}
                 <div className="product-card-content">
